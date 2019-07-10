@@ -1,0 +1,408 @@
+
+/*Geral*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #8c8c8c;
+	background-color: white;
+}
+
+body{
+	width: 100%;
+	margin: 0 auto;
+	overflow-x: hidden;
+}
+
+
+/*Topo da tela*/
+.logo{
+	background-color: #f8f8f8;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.titulo-chamada{
+	text-align: center;
+	margin: 0 auto;
+	width: 90%;
+}
+
+.titulo-chamada h1{
+	font-size: 2.2em;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
+.titulo-chamada p{
+	margin-top: 20px;
+	font-size: 1.5em;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
+.titulo-chamada span{
+	color: #C0C0C0;
+}
+
+.botao-chamada{
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 80px;
+}
+
+.botao-chamada .link-form{
+	background-color: #c91b10;
+	color: #fefefe;
+	font-size: 1em;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	border: none;
+	border-radius: 10px;
+	padding: 17px 60px;
+	text-decoration: none;
+	cursor: pointer;
+
+}
+
+.botao-chamada .link-form:hover{
+	background-color: #FF6347;
+}
+
+
+/*Slide Carousel*/
+.slide-carousel{
+    display: grid;
+    align-items: center;
+    background-color: #fff;
+    width: 1200px;
+    margin: auto;
+    padding-bottom: 67px;
+}
+  
+.marquee{
+    height: 300px;
+    width: 100%;
+}
+  
+.slide-carousel img {
+	padding: 20px;
+    height: 300px;
+    cursor: pointer;
+}
+
+.slide-carousel img:hover{
+	margin: 0 40px;
+	transform: scale(1.2);
+}
+
+
+/*Seção Todas as telas*/
+.main{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.multiTelas{
+	text-align: center;
+	letter-spacing: ;
+	font-size: 2.7em;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	margin-top: 40px;
+	margin-bottom: 44px;
+}
+
+.telas{
+	text-align: center;
+}
+
+.telas img{
+	width: 60%;
+	height: auto;
+	margin: 0 auto;
+	padding-bottom: 80px;
+}
+
+
+
+/*Formulário de cadastro no serviço de 7 dias grátis*/
+.formulario{
+	display:flex; 
+	flex-direction: column;
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+.formulario h1{
+	width: 90%;
+	margin: 0 auto;
+	padding-bottom: 20px;
+	color: #38777E; 
+	text-align: left;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	color: #000;
+}
+
+.formulario form{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.formulario [type="text"],  .formulario input[type='email']{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	letter-spacing: 2px;
+}
+
+.formulario input{
+	margin: 6px 0; 
+	height: 40px; 
+	color:#333;
+	border: 2px solid #ddd;
+	border-top: none;border-right: none;border-left: none;
+}
+
+.formulario input[type='text'], .formulario input[type='email']{
+	width: 100%; 
+	padding: 0 5px;
+}
+
+.formulario input[type='submit']{
+background: #3CB371;
+cursor: pointer;
+color:#fff;
+font-size: 1em;
+font-weight: 400;
+border:none;
+border-radius: 5px;
+margin-top: 40px;
+margin-bottom: 80px;
+}
+
+.formulario input[type='submit']:hover{
+	background-color: #2E8B57;
+}
+
+
+/*Rodape*/
+.rodape{
+	background-color: #f8f8f8;
+	width: 100%;
+	text-align: center;
+	clear: both;
+}
+
+
+/********* MEDIA SCREENS (RESOLUÇÕES DE TELAS)**********/
+
+/*Small Mini-Smartphones*/
+@media screen and (max-width: 320px){
+	
+	.titulo-chamada{
+		width: 90%;
+		text-align: center;
+	}
+	
+	.titulo-chamada h1{
+		font-size: 1.6em;
+		font-weight: 400;
+	}
+	
+	.titulo-chamada p{
+		font-size: 1.2em;
+		font-weight: 300;
+	}
+	
+	.botao-chamada{
+		padding-top: 10px;
+		padding-bottom: 20px;
+	}
+	
+	.slide-carousel{
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.slide-carousel img{
+    	height: 200px;
+	}
+
+	.multiTelas{
+		font-size: 1em;
+	}
+
+	.telas img{
+		padding-left: 0;
+	}
+
+	.formulario h1{
+		font-size: 1.1em;
+	}
+
+	.formulario input[type='submit']{
+     	width: 60%;
+     }
+
+}
+
+
+
+/*Small Smartphones*/
+@media screen and (min-width: 321px) and (max-width: 480px){
+	
+	.titulo-chamada{
+		margin-top: 50px;
+		width: 85%;
+		margin: 0 auto;
+	}
+
+	.titulo-chamada h1{
+		font-size: 1.8em;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 400;
+	}
+
+	.titulo-chamada p{
+		font-size: 1.2em;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 400;
+		margin-bottom: 40px;
+	}
+
+	.botao-chamada{
+		margin: 0 auto;
+		margin-bottom: 50px;
+		padding: 12px 35px;
+	}
+
+	.slide-carousel img{
+		height: 200px; 
+	}
+
+	.multiTelas{
+		font-size: 1.2em;
+	}
+
+	.telas img{
+		padding-left: 0;
+	}
+
+	 .formulario{
+	 	width: 100%;
+	 	margin: 0 auto;
+	 }
+
+	 .formulario h1{
+	 	font-size: 1.2em;
+	 }
+
+     .formulario input[type='submit']{
+     	width: 60%;
+     }
+}
+
+
+/*Medium Smartphones*/
+@media screen and (min-width: 481px) and (max-width: 768px){
+	
+	.titulo-chamada{
+		width: 85%;
+		margin: 0 auto;
+	}
+	
+	.titulo-chamada h1{
+		font-size: 1.8em;
+		font-weight: 400;
+	}
+
+	.titulo-chamada p{
+		font-size: 1.2em;
+		font-weight: 400;
+		margin-bottom: 40px;
+	}
+
+	.botao-chamada .link-form{
+		padding: 15px 50px;
+	}
+
+	.slide-carousel img {
+    height: 200px;
+	}
+
+	.telas img{	
+		padding-left: 0;
+	}
+
+	.multiTelas{
+		font-size: 1.4em;
+	}
+
+	.formulario{
+	 	width: 100%;
+	 	margin: 0 auto;
+	}
+
+	.formulario h1{
+		width: 90%;
+		margin: 0 auto;
+		font-size: 1.4em;
+	}
+
+	.formulario input[type='submit']{
+     	width: 50%;
+     }
+	
+}
+
+/*Larges Smartphones and Small Notebooks*/
+@media screen and (min-width: 769px) and (max-width: 1199px){
+	
+	.titulo-chamada h1{
+		font-size: 1.8em
+	}
+
+	.titulo-chamada p{
+		font-size: 1.2em;
+	}
+
+	.slide-carousel img{
+		height: 250px;
+	}
+
+	.telas img{
+		
+		padding-left: 0;
+	}
+
+	.multiTelas{
+		font-size: 1.8em;
+	}
+
+	.formulario input[type='submit']{
+		padding: 0 5px;
+		width: 30%;
+	}
+
+	.formulario h1{
+		font-size: 1.5em;		
+	}
+
+	.formulario input[type='submit']{
+     	width: 40%;
+     }
+}
+
+/*X Larges Screens*/
+@media screen and (min-width: 1200px){
+	.slide-carousel{
+		width: 100%;
+	}
+
+    .formulario input[type='submit']{
+    	width: 30%;
+    }
+}
